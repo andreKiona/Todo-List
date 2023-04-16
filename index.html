@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Task List</title>
+        
+        <!--Calling the css class for styling-->
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <!--Specifying to the user to input something-->
+        <header>
+            <h1>Task List</h1>
+
+            <!--The <form> tag is used to create an HTML form for user input.-->
+            <form id="new-task-form">
+                <input 
+                    type="text"
+                    id="new-task-input"
+                    placeholder="What do you have planned?"/>
+                    
+                <input 
+                    type="submit"
+                    id="new-task-submit"
+                    value="Add task"/>
+            </form>
+        </header>
+
+        <!--The <main> tag specifies the main content of a document.-->
+        <main>
+            <!--The <section> tag defines a section in a document.-->
+            <section class="task-list">
+                <h2>Tasks</h2>
+
+                <!--The <div> tag defines a division or a section in an HTML document.-->
+                <!--The <div> tag is easily styled by using the class or id attribute.-->
+                <div id="tasks">
+
+                    <!--<div class="task">
+                        <div class="content">
+                            <input 
+                                type="text"
+                                class="text"
+                                value="My shiny task"
+                                readonly                           
+                            />
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>-->
+
+                </div>
+            </section>
+        </main>
+
+        <!--Calling the Javascript to manupilations-->
+        <script src="main.js"></script>
+    </body>
+</html>
